@@ -1,0 +1,17 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# If you run the Node.js backend on Render / Railway / VPS,
+# you can forward API requests automatically by uncommenting or setting the target:
+# [[redirects]]
+#   from = "/api/*"
+#   to = "https://your-backend-service.onrender.com/api/:splat"
+#   status = 200
+#   force = true
+
+# SPA fallback rule for React Router / Navigation
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

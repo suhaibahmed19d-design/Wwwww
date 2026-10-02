@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: saf-tiktok-optimizer
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: frankfurt
+    envVars:
+      - key: PORT
+        value: 3000
